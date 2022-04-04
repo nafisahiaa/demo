@@ -7,3 +7,11 @@ h1{
     background-color: lightblue;
     text-align: center;
 }
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: purple;
+    margin: 10px;
+    padding: 30px;
+
+}
