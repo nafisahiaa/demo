@@ -59,5 +59,96 @@
 +<input type="number" id="b" value="25">
 =<output name="x" for="a b"></output>
 </form>
+   <h2>The param element</h2>
+   <object data="horse-donkey1.wav">
+       <param name="autoplay" value="true">
+   </object>
+   
+    <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre> 
+   <h2>The Progress element</h2>
+   <label for="file">Downloading progress:</label>
+   <progress id="file" value="32" max="100">32%</progress>
+   <h2>The q element</h2>
+   <p>WWF' s goal is to: <q>Build a future where people live in harmony with nature</q>
+   We hope they succeed</p>
+   <ruby>
+      漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+   </ruby>
+   <h2>The s element</h2>
+   <p><s>Only 50 ticketz left!</s></p>
+   <p>SOLD OUT!</p>
+   <h2>the samp element</h2>
+   <p>Message from my computer :</p>
+   <p><samp>File not found.<br>Press F1 to continue</samp></p>
+   <h2>The script element</h2>
+   <p id="demo"></p>
+   <script>
+        document.getElementById("demo").innerHTML="Hello JavaScript!";</script>
+        <section>
+            <h2>WWF's symbol</h2>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section>
+        <label for="colors">Choose a color:</label>
+        <select name="colors" id="colors">
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="blue">Blue</option>
+        </select>
+        <p>this is some normal text</p>
+        <p><small>This is some smaller text</small></p>
+        <audio controls>
+            <source src="horse-donkey1.wav" type="audio/wav">
+        </audio>
+        <p>My mother has <span style="color: blue;font-weight: bold">blue</span> eyes and my father has <span style="color: darkgreen;font-weight: bold">darkgreen </span> eyes</p>
+        <strong>The text is important</strong>
+        <h2>THe sub and sup elements</h2>
+        <p>H2<sub>0</sub></p>
+        <p>a<sup>2</sup>+b<sup>2</sup></p>
+        <h2>The summary element</h2>
+        <details>
+            <summary>Ramadan</summary>
+            <p>Ramadan is considered one of the holiest months of the year for Muslims. In Ramadan, Muslims commemorate the revelation of the Qur’an, and fast from food and drink during the sunlit hours as a means of drawing closer to God and cultivating self-control, gratitude, and compassion for those less fortunate. Ramadan is a month of intense spiritual rejuvenation with a heightened focus on devotion, during which Muslims spend extra time reading the Qur’an and performing special prayers. Those unable to fast, such as pregnant or nursing women, the sick, or elderly people and children, are exempt from fasting.</p>
+        </details>
+        <h2>The svg element</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red">
+        </svg>
+       <h2>The table element</h2>
+
+<table style="border: 1px solid black">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+   <button onclick="showContent()">Show hidden content</button>
+   <template>
+       <h2>Nature</h2>
+       <img src="image/nature1.JPG" width="214" height="204">
+   </template>
+   <script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+   <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+   <p>This is some <u>mispeled</u> text.</p>
+   <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
     </body>
 </html>
